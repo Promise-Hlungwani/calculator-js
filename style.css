@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+}
+.heading {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: -20px;
+  color: rgb(54, 54, 54);
+}
+.container {
+  overflow: inherit;
+  margin: auto;
+  width: 350px;
+  border: 8px solid rgb(54, 54, 54);
+  border-radius: 50px;
+}
+.calc {
+  box-shadow: 6px 6px 13px rgb(108, 108, 108);
+  border: 10px solid rgb(133, 128, 128);
+  border-radius: 40px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 66px);
+}
+.output {
+  grid-column: 1/-1;
+  /* background-color: rgb(247, 34, 34); */
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.output .previous-input {
+  color: rgb(66, 66, 66);
+  font-size: 1.5rem;
+}
+.output .current-input {
+  color: rgb(19, 19, 19);
+  font-size: 2.5rem;
+}
+input {
+  grid-column: span 4;
+  height: 68px;
+  width: 258px;
+  border: none;
+  text-align: end;
+  margin: 20px 0px 30px 0px;
+  padding: 20px;
+  font-size: 40px;
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+button {
+  background-color: rgb(99, 99, 99);
+  color: white;
+  border: none;
+  border-radius: 32px;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+.top-btns {
+  background-color: rgb(189, 189, 189);
+  color: black;
+}
+.zero {
+  width: 120px;
+  background-color: rgb(99, 99, 99);
+}
+
+.right-btns {
+  background-color: rgb(11, 73, 3);
+}
+
+.equals {
+  background-color: rgb(11, 73, 3);
+  margin-left: 70px;
+}
+
+.coma {
+  margin-left: 70px;
+}
+
+.right-btns:hover,
+.equals:hover,
+button:hover,
+.coma:hover,
+.top-btns:hover {
+  background-color: rgb(154, 154, 154);
+}
